@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data Anterior:"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:padding="5dp" />
+
+    <EditText
+        android:id="@+id/data_anterior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/ic_entrar_dados"
+        android:hint="ex: 01/03/2019"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:textColorHint="#424040"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:inputType="number"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Valor Anterior:"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:padding="5dp" />
+
+
+    <EditText
+        android:id="@+id/edit_valor_anterior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/ic_entrar_dados"
+        android:hint="ex: R$ 700,00"
+        android:inputType="number"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="#424040"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:maxLines="1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data Atual:"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:padding="5dp" />
+
+
+    <EditText
+        android:id="@+id/data_atual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/ic_entrar_dados"
+        android:hint="ex: 01/03/2021"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:textColorHint="#424040"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:inputType="number" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Valor Atual:"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:padding="5dp" />
+
+
+    <EditText
+        android:id="@+id/edit_valor_atual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/ic_entrar_dados"
+        android:hint="ex: R$ 1000,00"
+        android:inputType="number"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="#424040"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:maxLines="1"/>
+
+    <Button
+        android:id="@+id/bt_calcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red"
+        android:backgroundTint="@color/red"
+        android:text="Calcular"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/text_erro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="15dp"
+        android:textColor="@color/red"
+        android:gravity="center"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/text_resultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:padding="5dp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Obs: Caso o resultado seja negativo, houve um desconto. Caso seja positivo, houve um acréscimo. "
+        android:textColor="#686666"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        />
+
+    <ImageView
+        android:id="@+id/image_resetar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/ic_restart_35"
+        android:backgroundTint="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+
+</LinearLayout>
